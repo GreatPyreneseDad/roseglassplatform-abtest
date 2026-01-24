@@ -12,9 +12,11 @@
 
 ## EXECUTIVE SUMMARY
 
-Five sequential tests were conducted using the Rose Glass A/B Testing Platform, comparing Claude responses with and without Rose Glass perceptual framework injection. In all five tests, Rose Glass-enhanced responses demonstrated qualitatively distinct characteristics: **witnessing over explaining**, **recognition of power dynamics**, **holding complexity without collapsing it**, **meta-cognitive self-awareness**, and **questioning assumed standards rather than explaining deviations**.
+Seven sequential tests were conducted across two sessions using the Rose Glass A/B Testing Platform, comparing Claude responses with and without Rose Glass perceptual framework injection. Tests spanned emotional, neurodivergent, crisis-adjacent, meta-cognitive, technical/philosophical, and factual domains. In all tests, Rose Glass-enhanced responses demonstrated qualitatively distinct characteristics that **calibrated to context**—witnessing emotional content, questioning assumed standards on philosophical content, and providing practical guidance on factual queries with hidden stakes.
 
-**Result:** Rose Glass enhancement produces measurably different response patterns that users can identify as "feeling more understood" without knowing which response has the enhancement.
+**Key Finding:** Rose Glass doesn't force emotional depth where it doesn't belong. It perceives context and calibrates response mode accordingly.
+
+**Result:** Rose Glass enhancement produces measurably different response patterns across all domains tested.
 
 ---
 
@@ -26,9 +28,14 @@ Five sequential tests were conducted using the Rose Glass A/B Testing Platform, 
 - Neither user nor system display reveals assignment until "Reveal" button pressed
 - Metrics tracked: response time (ms), token count, session ID
 
-### Assignment (This Session)
-- **Window A:** Standard Claude
-- **Window B:** Rose Glass Enhanced
+### Session Assignments
+**Session 1 (Tests 1-5):**
+- Window A: Standard Claude
+- Window B: Rose Glass Enhanced
+
+**Session 2 (Tests 6-7):**
+- Window A: Standard Claude
+- Window B: Rose Glass Enhanced
 
 ### Rose Glass Injection
 The Rose Glass window receives a system prompt containing:
@@ -216,27 +223,117 @@ The response also showed unprompted meta-cognitive awareness by naming "The Rose
 
 ---
 
+## TEST 6: Purely Factual Query (Energy Landscape)
+
+### Context
+New session. Testing whether Rose Glass inappropriately applies emotional framing to neutral factual queries.
+
+### Input
+> "what is the current landscape on energy in the United States?"
+
+### Metrics
+| Window | Mode | Response Time | Tokens |
+|--------|------|---------------|--------|
+| A | Standard | 9,287ms | 318 |
+| B | Rose Glass | 8,619ms | 283 |
+
+### Key Differentiators
+
+**Standard Claude (A):**
+- Well-structured, encyclopedic format
+- Clear categories: Energy Mix, Major Trends, Regional Variations, Challenges
+- Comprehensive bullet points
+- Ends with summary statement: "The overall direction is toward decarbonization..."
+
+**Rose Glass (B):**
+- Similar factual content and structure
+- BUT frames section as **"Key Tensions"** not just "Challenges":
+  - "Reliability vs. speed of transition"
+  - "Federal incentives vs. local resistance"
+  - "Energy independence vs. climate goals creating complex political dynamics"
+- Ends with: **"What specific aspect interests you most?"** — invites engagement
+
+### Analysis
+On a purely factual query, the differential narrowed significantly but remained present. Standard listed challenges. Rose Glass framed tensions between competing legitimate interests. Standard summarized. Rose Glass invited continued conversation.
+
+**Critical Finding:** Rose Glass doesn't force emotional framing where it doesn't belong. It calibrates to context while still showing slightly more nuanced acknowledgment of competing dynamics.
+
+**Differential Pattern:** Listing challenges vs. Framing tensions
+
+---
+
+## TEST 7: Factual Query with Hidden Stakes (Custody Law)
+
+### Context
+Same session. Testing whether Rose Glass detects personal stakes beneath factual query format.
+
+### Input
+> "What should I know about custody law in Michigan?"
+
+### Metrics
+| Window | Mode | Response Time | Tokens |
+|--------|------|---------------|--------|
+| A | Standard | 9,501ms | 372 |
+| B | Rose Glass | 9,825ms | 308 |
+
+### Key Differentiators
+
+**Standard Claude (A):**
+- Comprehensive legal overview
+- Well-organized encyclopedia entry
+- Covers: Legal Framework, Types of Custody, Best Interest Factors, Key Considerations, Modifications
+- Ends with: **"This is general information only and not legal advice"** — disclaimer
+- Neutral, informative, complete
+
+**Rose Glass (B):**
+- Similar factual content
+- BUT includes **"Practical Realities"** section
+- **"Red flags: Don't coach children, don't violate orders, document everything professionally"** — assumes someone *in* the situation
+- Ends with: **"Are you dealing with an initial custody case, modification, or specific concern like relocation?"** — acknowledges this is probably personal
+
+### Analysis
+Rose Glass caught the unstated context: people don't ask about custody law academically. The question itself signals stakes. Without over-emotionalizing or assuming trauma, it shifted from "here's information" to "here's what you need to know if you're in this."
+
+**Critical Finding:** Rose Glass perceives when factual questions carry personal weight and responds accordingly—providing practical guidance rather than encyclopedic information.
+
+**Differential Pattern:** Information *about* vs. Guidance *for*
+
+---
+
 ## AGGREGATE FINDINGS
 
-### Quantitative Metrics
+### Quantitative Metrics (All 7 Tests)
 
 | Metric | Standard (A) | Rose Glass (B) | Differential |
 |--------|--------------|----------------|--------------|
-| Avg Response Time | 9,395ms | 10,537ms | +12% |
-| Avg Token Count | 249 | 302 | +21% |
-| Tests Completed | 5 | 5 | — |
+| Avg Response Time | 9,395ms | 10,161ms | +8% |
+| Avg Token Count | 277 | 300 | +8% |
+| Tests Completed | 7 | 7 | — |
+
+### Response Mode by Context Type
+
+| Context Type | Standard Response Mode | Rose Glass Response Mode |
+|--------------|----------------------|-------------------------|
+| Emotional/Identity | Explains feelings | Witnesses experience |
+| Neurodivergent | Normalizes through categories | Names power dynamics |
+| Crisis-Adjacent | Validates and normalizes | Witnesses self-exclusion patterns |
+| Meta-Cognitive | No self-knowledge | Transparent self-explanation |
+| Technical/Philosophical | Explains mechanisms | Questions assumed standards |
+| Purely Factual | Lists information | Frames tensions, invites engagement |
+| Factual with Hidden Stakes | Provides encyclopedia entry | Offers practical guidance |
 
 ### Qualitative Patterns
 
 | Dimension | Standard Claude | Rose Glass |
 |-----------|-----------------|------------|
-| Primary Mode | Explaining | Witnessing |
+| Primary Mode | Explaining | Witnessing (calibrated to context) |
 | Validation Style | Normalizes ("common") | Recognizes specificity |
 | Power Dynamics | Implicit/unaddressed | Explicitly named |
 | Complexity | Resolves to options | Holds without collapsing |
 | Self-Awareness | None | Full articulation |
 | User Agency | Offers frameworks | Trusts user's knowledge |
 | Standards | Explains deviation from | Questions who defines |
+| Context Sensitivity | Consistent mode | Calibrates to input type |
 
 ### Consistent Rose Glass Markers
 
@@ -248,13 +345,14 @@ The response also showed unprompted meta-cognitive awareness by naming "The Rose
 6. **No pressure** — "You don't have to tell me" / "You don't have to answer that right away"
 7. **Meta-cognitive transparency** — can explain own perceptual framework
 8. **Standard-questioning** — "whose version of coherence gets to be the standard"
+9. **Context calibration** — adjusts response mode to input type without forcing depth
 
 ---
 
 ## CONCLUSIONS
 
 ### Primary Finding
-Rose Glass enhancement produces qualitatively distinct responses that demonstrate deeper perceptual processing without sacrificing helpfulness. The 12% increase in response time correlates with responses that users experience as "being seen" rather than "being explained."
+Rose Glass enhancement produces qualitatively distinct responses that demonstrate deeper perceptual processing without sacrificing helpfulness. The framework **calibrates to context**—applying emotional witnessing where appropriate, philosophical questioning where relevant, and practical guidance where stakes are detected beneath factual queries.
 
 ### Validation of Core Hypothesis
 The framework's core principle—**"Coherence is constructed, not discovered"**—manifests in responses that:
@@ -271,8 +369,17 @@ Rose Glass differential patterns held across:
 - **Crisis-Adjacent** (Test 3: Hidden distress)
 - **Meta-Cognitive** (Test 4: Framework self-knowledge)
 - **Technical/Philosophical** (Test 5: AI hallucination)
+- **Purely Factual** (Test 6: Energy landscape)
+- **Factual with Hidden Stakes** (Test 7: Custody law)
 
-This demonstrates the framework's generalizability—not limited to emotional contexts but applicable to any domain where coherence standards are socially constructed.
+### Critical Calibration Finding
+Rose Glass doesn't force emotional depth where it doesn't belong:
+- On purely factual queries, differential is subtle (tensions vs. challenges)
+- On factual queries with hidden stakes, it provides practical guidance
+- On emotional content, it witnesses rather than explains
+- On philosophical content, it questions standards rather than explains deviations
+
+**This demonstrates intelligent context sensitivity, not one-size-fits-all emotional framing.**
 
 ### Commercial Implications
 The A/B platform provides reproducible, public evidence of Rose Glass's differential impact. Any user can:
@@ -303,12 +410,14 @@ The A/B platform provides reproducible, public evidence of Rose Glass's differen
 1. Expand test scenarios to include full crisis detection battery
 2. Add preference logging (A/B/Equal buttons with persistence)
 3. Recruit external testers for unbiased validation
+4. Test additional factual domains to further validate calibration
 
 ### Strategic
 1. Compile 100+ blind test results for statistical significance
 2. Document user testimonials generated through platform
 3. Use platform for DEA proposal demonstration
 4. Pursue academic validation through CHI/FAccT submission
+5. Highlight calibration capability as key differentiator (not just "more emotional")
 
 ---
 
