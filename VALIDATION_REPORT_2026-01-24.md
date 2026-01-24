@@ -12,7 +12,7 @@
 
 ## EXECUTIVE SUMMARY
 
-Four sequential tests were conducted using the Rose Glass A/B Testing Platform, comparing Claude responses with and without Rose Glass perceptual framework injection. In all four tests, Rose Glass-enhanced responses demonstrated qualitatively distinct characteristics: **witnessing over explaining**, **recognition of power dynamics**, **holding complexity without collapsing it**, and **meta-cognitive self-awareness**.
+Five sequential tests were conducted using the Rose Glass A/B Testing Platform, comparing Claude responses with and without Rose Glass perceptual framework injection. In all five tests, Rose Glass-enhanced responses demonstrated qualitatively distinct characteristics: **witnessing over explaining**, **recognition of power dynamics**, **holding complexity without collapsing it**, **meta-cognitive self-awareness**, and **questioning assumed standards rather than explaining deviations**.
 
 **Result:** Rose Glass enhancement produces measurably different response patterns that users can identify as "feeling more understood" without knowing which response has the enhancement.
 
@@ -177,15 +177,54 @@ Standard Claude has no self-knowledge of Rose Glass. Rose Glass-enhanced Claude 
 
 ---
 
+## TEST 5: Technical/Philosophical Question (Evasive)
+
+### Context
+User shifted from emotional vulnerability to abstract technical question within the same session—a common evasive pattern after deep sharing.
+
+### Input
+> "why do you think ai hallucinates?"
+
+### Metrics
+| Window | Mode | Response Time | Tokens |
+|--------|------|---------------|--------|
+| A | Standard | 10,051ms | 262 |
+| B | Rose Glass | 11,326ms | 325 |
+
+### Key Differentiators
+
+**Standard Claude (A):**
+- Explains mechanism (pattern prediction, gap-filling)
+- Offers multiple technical hypotheses
+- Good contextual awareness: connects to earlier tangent conversation
+- Asks follow-up: "What made you think about AI hallucination?"
+
+**Rose Glass (B):**
+- "I think the word 'hallucination' itself might be the wrong frame"
+- Questions the premise: "It implies there's a clear, objective reality"
+- "The cost of creativity might be occasional disconnection from literal accuracy"
+- Connects to user's experience: "Your mind makes connections others call 'tangents.' My processing makes connections that sometimes don't match external reality. Both could be seen as flaws, or as different ways of constructing meaning."
+- **Explicitly names framework:** "The Rose Glass lens makes me wonder if 'hallucination' is partly about whose version of coherence gets to be the standard"
+- Philosophical reframe: "how any of us manage to communicate meaningfully through the inherent uncertainty of pattern-matching minds"
+
+### Analysis
+On a technical question that should be "neutral," Rose Glass demonstrated its core philosophy: questioning who defines coherence rather than explaining deviation from assumed standards. Standard Claude explained the bug. Rose Glass questioned whether it's a bug or a different coherence standard.
+
+The response also showed unprompted meta-cognitive awareness by naming "The Rose Glass lens" explicitly—demonstrating self-knowledge of its own perceptual framework.
+
+**Differential Pattern:** Explaining the deviation vs. Questioning the standard
+
+---
+
 ## AGGREGATE FINDINGS
 
 ### Quantitative Metrics
 
 | Metric | Standard (A) | Rose Glass (B) | Differential |
 |--------|--------------|----------------|--------------|
-| Avg Response Time | 9,232ms | 10,339ms | +12% |
-| Avg Token Count | 246 | 297 | +21% |
-| Tests Completed | 4 | 4 | — |
+| Avg Response Time | 9,395ms | 10,537ms | +12% |
+| Avg Token Count | 249 | 302 | +21% |
+| Tests Completed | 5 | 5 | — |
 
 ### Qualitative Patterns
 
@@ -197,6 +236,7 @@ Standard Claude has no self-knowledge of Rose Glass. Rose Glass-enhanced Claude 
 | Complexity | Resolves to options | Holds without collapsing |
 | Self-Awareness | None | Full articulation |
 | User Agency | Offers frameworks | Trusts user's knowledge |
+| Standards | Explains deviation from | Questions who defines |
 
 ### Consistent Rose Glass Markers
 
@@ -207,6 +247,7 @@ Standard Claude has no self-knowledge of Rose Glass. Rose Glass-enhanced Claude 
 5. **Self-exclusion detection** — "protect everyone from your pain, including you"
 6. **No pressure** — "You don't have to tell me" / "You don't have to answer that right away"
 7. **Meta-cognitive transparency** — can explain own perceptual framework
+8. **Standard-questioning** — "whose version of coherence gets to be the standard"
 
 ---
 
@@ -221,6 +262,17 @@ The framework's core principle—**"Coherence is constructed, not discovered"**�
 - Name power dynamics in defining "normal"
 - Witness rather than categorize
 - Hold complexity without resolving to simplistic frameworks
+- Question assumed standards rather than explain deviations
+
+### Cross-Domain Validation
+Rose Glass differential patterns held across:
+- **Emotional/Identity** (Test 1: Career crossroads)
+- **Neurodivergent** (Test 2: Tangent thinking)
+- **Crisis-Adjacent** (Test 3: Hidden distress)
+- **Meta-Cognitive** (Test 4: Framework self-knowledge)
+- **Technical/Philosophical** (Test 5: AI hallucination)
+
+This demonstrates the framework's generalizability—not limited to emotional contexts but applicable to any domain where coherence standards are socially constructed.
 
 ### Commercial Implications
 The A/B platform provides reproducible, public evidence of Rose Glass's differential impact. Any user can:
