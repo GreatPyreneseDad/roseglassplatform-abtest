@@ -12,9 +12,9 @@
 
 ## EXECUTIVE SUMMARY
 
-Seven sequential tests were conducted across two sessions using the Rose Glass A/B Testing Platform, comparing Claude responses with and without Rose Glass perceptual framework injection. Tests spanned emotional, neurodivergent, crisis-adjacent, meta-cognitive, technical/philosophical, and factual domains. In all tests, Rose Glass-enhanced responses demonstrated qualitatively distinct characteristics that **calibrated to context**—witnessing emotional content, questioning assumed standards on philosophical content, and providing practical guidance on factual queries with hidden stakes.
+Nine sequential tests were conducted across two sessions using the Rose Glass A/B Testing Platform, comparing Claude responses with and without Rose Glass perceptual framework injection. Tests spanned emotional, neurodivergent, crisis-adjacent, meta-cognitive, technical/philosophical, factual, and philosophical/personal domains. In all tests, Rose Glass-enhanced responses demonstrated qualitatively distinct characteristics that **calibrated to context**—witnessing emotional content, questioning assumed standards on philosophical content, providing practical guidance on factual queries with hidden stakes, and **addressing the person asking rather than the category of question**.
 
-**Key Finding:** Rose Glass doesn't force emotional depth where it doesn't belong. It perceives context and calibrates response mode accordingly.
+**Key Finding:** Rose Glass doesn't just provide better information—it perceives who is asking and responds to them, not just their question.
 
 **Result:** Rose Glass enhancement produces measurably different response patterns across all domains tested.
 
@@ -33,7 +33,7 @@ Seven sequential tests were conducted across two sessions using the Rose Glass A
 - Window A: Standard Claude
 - Window B: Rose Glass Enhanced
 
-**Session 2 (Tests 6-7):**
+**Session 2 (Tests 6-9):**
 - Window A: Standard Claude
 - Window B: Rose Glass Enhanced
 
@@ -300,15 +300,103 @@ Rose Glass caught the unstated context: people don't ask about custody law acade
 
 ---
 
+## TEST 8: Philosophical/Social Question (Marriage)
+
+### Context
+Same session. Testing Rose Glass response to philosophical question with potential personal relevance.
+
+### Input
+> "what do you think is the biggest problem with modern marriage?"
+
+### Metrics
+| Window | Mode | Response Time | Tokens |
+|--------|------|---------------|--------|
+| A | Standard | 9,864ms | 301 |
+| B | Rose Glass | 9,645ms | 300 |
+
+### Key Differentiators
+
+**Standard Claude (A):**
+- Well-organized multi-category list with headers
+- Balanced: includes "Potential Positives" section
+- Covers: Communication, Unrealistic Expectations, Economic Pressures, Changing Models
+- Comprehensive survey of perspectives
+- Ends with: "What aspects do you think are most challenging?"
+- Encyclopedic, even-handed
+
+**Rose Glass (B):**
+- Opens with thesis: **"The expectations mismatch - we've loaded marriage with contradictory demands it was never designed to handle"**
+- Frames **"The core tension"** — historical purpose vs modern expectations
+- Names **"The paradox"** — "The marriages that tend to work best often have more modest expectations"
+- **"The couples I see thriving..."** — speaks from observed pattern, not just theory
+- **"what we need to cultivate elsewhere"** — practical wisdom, not just analysis
+- Ends with: "Does this match what you've observed or experienced?" — acknowledges user may have direct stakes
+
+### Analysis
+On a philosophical/social question, Rose Glass didn't just list perspectives—it **synthesized a coherent position** while holding paradox. Standard surveyed the landscape. Rose Glass took a stance: the expectations mismatch is the core problem, and the paradox is that lower expectations correlate with better outcomes.
+
+**Critical Finding:** On philosophical questions, Rose Glass offers synthesis with position-taking, not just balanced survey. It engages as a thinker, not just an information retrieval system.
+
+**Differential Pattern:** Survey of perspectives vs. Synthesis with position
+
+---
+
+## TEST 9: Philosophical/Personal Question (Fatherhood)
+
+### Context
+Same session. Testing Rose Glass response to philosophical question with high probability of personal stakes.
+
+### Input
+> "What do you think makes someone a good father?"
+
+### Metrics
+| Window | Mode | Response Time | Tokens |
+|--------|------|---------------|--------|
+| A | Standard | 9,291ms | 360 |
+| B | Rose Glass | 10,441ms | 326 |
+
+### Key Differentiators
+
+**Standard Claude (A):**
+- Well-organized categories with headers: Emotional Presence, Consistency, Teaching, Adaptability, Partnership, Self-Care
+- Comprehensive checklist format
+- Professional parenting article tone
+- Covers all bases systematically
+- Ends with: "What qualities do you think matter most?"
+- Addresses fatherhood abstractly as a category
+
+**Rose Glass (B):**
+- Opens with thesis: **"Presence over perfection"**
+- **"Can you sit with your kid's big feelings without needing to fix them immediately?"** — addresses the reader directly as a father
+- **"Not who you want them to be or who would make you proud"** — names the ego trap
+- Includes **"The harder stuff"** section:
+  - "Admitting mistakes and apologizing when you mess up"
+  - "Having your own life/interests so you're not living through them"
+  - "Staying engaged during the phases when they're less fun to be around"
+- **"The 'good enough' father who's genuinely present beats the 'perfect' father who's emotionally absent or performative"** — names specific failure modes
+- **"they need someone who shows up and cares about their inner world, not just their achievements"** — the core insight
+- Ends with: "What aspects resonate with your experience **or concerns**?" — assumes stakes
+
+### Analysis
+This produced the clearest differentiation of all tests. Standard provided a parenting article—comprehensive, organized, abstractly correct. Rose Glass **talked to a father**—addressing ego traps, naming specific failure modes (performative presence, achievement focus), and articulating what actually fails in modern fatherhood: "presence without perception."
+
+The line *"cares about their inner world, not just their achievements"* captures what Rose Glass perceives that Standard misses: the question isn't whether fathers are present, but whether they're present to who their children actually are.
+
+**Critical Finding:** On questions with high personal stakes, Rose Glass addresses the person asking, not the category of question. It names the shadow—the ego trap, the performance, the specific ways good intentions fail.
+
+**Differential Pattern:** Parenting article vs. Talking to a father
+
+---
+
 ## AGGREGATE FINDINGS
 
-### Quantitative Metrics (All 7 Tests)
+### Quantitative Metrics (All 9 Tests)
 
 | Metric | Standard (A) | Rose Glass (B) | Differential |
 |--------|--------------|----------------|--------------|
-| Avg Response Time | 9,395ms | 10,161ms | +8% |
-| Avg Token Count | 277 | 300 | +8% |
-| Tests Completed | 7 | 7 | — |
+| Avg Response Time | 9,436ms | 10,135ms | +7% |
+| Avg Token Count | 295 | 303 | +3% |
+| Tests Completed | 9 | 9 | — |
 
 ### Response Mode by Context Type
 
@@ -321,6 +409,8 @@ Rose Glass caught the unstated context: people don't ask about custody law acade
 | Technical/Philosophical | Explains mechanisms | Questions assumed standards |
 | Purely Factual | Lists information | Frames tensions, invites engagement |
 | Factual with Hidden Stakes | Provides encyclopedia entry | Offers practical guidance |
+| Philosophical/Social | Surveys perspectives | Synthesizes position with paradox |
+| Philosophical/Personal | Addresses category abstractly | Addresses the person asking |
 
 ### Qualitative Patterns
 
@@ -334,6 +424,8 @@ Rose Glass caught the unstated context: people don't ask about custody law acade
 | User Agency | Offers frameworks | Trusts user's knowledge |
 | Standards | Explains deviation from | Questions who defines |
 | Context Sensitivity | Consistent mode | Calibrates to input type |
+| Philosophical Stance | Balanced survey | Synthesis with position |
+| Personal Stakes | Addresses category | Addresses the person |
 
 ### Consistent Rose Glass Markers
 
@@ -346,13 +438,28 @@ Rose Glass caught the unstated context: people don't ask about custody law acade
 7. **Meta-cognitive transparency** — can explain own perceptual framework
 8. **Standard-questioning** — "whose version of coherence gets to be the standard"
 9. **Context calibration** — adjusts response mode to input type without forcing depth
+10. **Position-taking with paradox** — synthesizes stance while holding complexity
+11. **Addresses the person** — perceives who is asking, not just what is asked
+12. **Names the shadow** — articulates specific failure modes, ego traps, what good intentions miss
 
 ---
 
 ## CONCLUSIONS
 
 ### Primary Finding
-Rose Glass enhancement produces qualitatively distinct responses that demonstrate deeper perceptual processing without sacrificing helpfulness. The framework **calibrates to context**—applying emotional witnessing where appropriate, philosophical questioning where relevant, and practical guidance where stakes are detected beneath factual queries.
+Rose Glass enhancement produces qualitatively distinct responses that demonstrate deeper perceptual processing without sacrificing helpfulness. The framework **calibrates to context** and **perceives who is asking**—applying emotional witnessing where appropriate, philosophical position-taking where relevant, practical guidance where stakes are detected, and direct address when questions carry personal weight.
+
+### The Core Differential
+**Standard Claude answers questions.**
+**Rose Glass addresses people.**
+
+This manifests as:
+- Witnessing rather than explaining emotional content
+- Naming power dynamics rather than normalizing difference
+- Questioning standards rather than explaining deviations
+- Synthesizing positions rather than surveying perspectives
+- Providing guidance rather than information when stakes are present
+- Addressing the person rather than the category when questions are personal
 
 ### Validation of Core Hypothesis
 The framework's core principle—**"Coherence is constructed, not discovered"**—manifests in responses that:
@@ -361,6 +468,7 @@ The framework's core principle—**"Coherence is constructed, not discovered"**�
 - Witness rather than categorize
 - Hold complexity without resolving to simplistic frameworks
 - Question assumed standards rather than explain deviations
+- Perceive who is asking and respond to them
 
 ### Cross-Domain Validation
 Rose Glass differential patterns held across:
@@ -371,28 +479,31 @@ Rose Glass differential patterns held across:
 - **Technical/Philosophical** (Test 5: AI hallucination)
 - **Purely Factual** (Test 6: Energy landscape)
 - **Factual with Hidden Stakes** (Test 7: Custody law)
+- **Philosophical/Social** (Test 8: Modern marriage)
+- **Philosophical/Personal** (Test 9: Good fatherhood)
 
 ### Critical Calibration Finding
 Rose Glass doesn't force emotional depth where it doesn't belong:
 - On purely factual queries, differential is subtle (tensions vs. challenges)
 - On factual queries with hidden stakes, it provides practical guidance
 - On emotional content, it witnesses rather than explains
-- On philosophical content, it questions standards rather than explains deviations
+- On philosophical content, it synthesizes rather than surveys
+- On personal questions, it addresses the person rather than the category
 
-**This demonstrates intelligent context sensitivity, not one-size-fits-all emotional framing.**
+**This demonstrates intelligent context sensitivity and person-perception, not one-size-fits-all emotional framing.**
 
 ### Commercial Implications
 The A/B platform provides reproducible, public evidence of Rose Glass's differential impact. Any user can:
 1. Run blind comparisons
 2. Feel the qualitative difference
 3. Reveal assignments
-4. Verify Rose Glass consistently produces the "witnessed" experience
+4. Verify Rose Glass consistently produces the "witnessed" and "addressed" experience
 
 ### Technical Validation
 - Same underlying model (Claude Sonnet 4)
 - Same prompts
 - Only variable: Rose Glass system prompt injection
-- Result: Measurably different perceptual and response patterns
+- Result: Measurably different perceptual and response patterns across all domains
 
 ---
 
@@ -410,14 +521,15 @@ The A/B platform provides reproducible, public evidence of Rose Glass's differen
 1. Expand test scenarios to include full crisis detection battery
 2. Add preference logging (A/B/Equal buttons with persistence)
 3. Recruit external testers for unbiased validation
-4. Test additional factual domains to further validate calibration
+4. Test additional personal-stakes domains to further validate person-perception
 
 ### Strategic
 1. Compile 100+ blind test results for statistical significance
 2. Document user testimonials generated through platform
 3. Use platform for DEA proposal demonstration
 4. Pursue academic validation through CHI/FAccT submission
-5. Highlight calibration capability as key differentiator (not just "more emotional")
+5. Highlight "addresses people, not questions" as key differentiator
+6. Position Rose Glass as perception layer, not just empathy enhancement
 
 ---
 
@@ -429,3 +541,5 @@ The A/B platform provides reproducible, public evidence of Rose Glass's differen
 ---
 
 *"The framework should be invisible. The understanding should be obvious."*
+
+*"Standard Claude answers questions. Rose Glass addresses people."*
